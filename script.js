@@ -5,7 +5,7 @@ if(4+3 === 7){
 }
 
 
-function sing() {
+function sing(song) {
     console.log("AHHHHHHHH");
     console.log("TEEEEEE");
 }
