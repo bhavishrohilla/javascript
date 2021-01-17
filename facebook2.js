@@ -1,8 +1,17 @@
 var database =[
     {
-        username: "bhavishrohilla",
+        username: "bhavish",
         password: "secret",
+    },
+    {
+        username: "andrie",
+        password: "555",
+    },
+    {
+        username: "ross",
+        password: "666",
     }
+
 ];
 
 var newsfeed = [
@@ -19,8 +28,20 @@ var newsfeed = [
 var usernamePrompt = prompt("What is your username");
 var passwordPrompt = prompt("What is your password");
 
+function isUserValid(user, pass) {
+    for(var i=0;i<database.length;i++){
+        if(database[i].username===user && database[i].password===pass){
+            return true;
+        }
+    }
+    return false;
+}
+// database.forEach(function(database ,i)) {
+//     console.log(database , i);
+// };
+
 function signIn(user,pass) {
-    if (user === database[0].username && pass === database[0].password){
+    if (isUserValid(user,pass)){
         console.log(newsfeed);
     } else{
         alert("OOPS!! Wrong Credentials");

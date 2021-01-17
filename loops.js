@@ -6,10 +6,10 @@ todos = [
     "study JAVASCRIPT",
 ];
 
-for (var i=0; i<todos.length; i++) {
-     todos[i] = todos[i] + "??"
-     console.log(todos)
-}
+// for (var i=0; i<todos.length; i++) {
+//      todos[i] = todos[i] + "??"
+//      console.log(todos)
+// }
 
 for (var i=0; i<todos.length; i++) {
     console.log(todos[i] + "--" + i);
